@@ -23,5 +23,4 @@ class RepositoriesController < ApplicationController
     @github = GithubService.new( { access_token: session[:token] })
   end
 
-
 end
