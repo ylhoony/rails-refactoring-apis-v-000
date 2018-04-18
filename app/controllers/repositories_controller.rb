@@ -20,7 +20,7 @@ class RepositoriesController < ApplicationController
   private
 
   def initialize_github
-    github = GithubService.new( { access_token: session[:token] })
+    @github = GithubService.new( { access_token: session[:token] })
   end
 
 
