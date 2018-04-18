@@ -4,7 +4,7 @@ class GithubService
 
   def initialize(access_hash = nil)
     binding.pry
-    @access_token = access_hash["access_token"] if access_hash
+    @access_token = access_hash[:access_token] if access_hash
   end
 
   def authenticate!(client_id, client_secret, code)
